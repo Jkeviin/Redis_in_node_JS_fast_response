@@ -1,0 +1,12 @@
+El codigo tenia un problema y es que funciona con la version 3 de redis:
+Uso: npm i redis@3.1.2 para arreglar.
+
+Utiliza las siguientes librerias:
+  1. axios, para las conexions get, post, etc.
+  2. express, para el servidor.
+  3. nodemon, de manera dev para actualizar cambios en ejecucion.
+  4. redis, para guardar datos en la cache.
+  5. response-time, para ver cuanto demora una peticion.
+
+---
+  En el computador se instaló npm i -g redis-commander y luego el comando redis-commander para poder visualizar demanera grafica lo que se guarda en redis.
