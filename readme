@@ -9,4 +9,4 @@ Utiliza las siguientes librerias:
   5. response-time, para ver cuanto demora una peticion.
 
 ---
-  En el computador se instaló npm i -g redis-commander y luego el comando redis-commander para poder visualizar demanera grafica lo que se guarda en redis.
+  En el computador se instaló npm i -g redis-commander y luego el comando redis-commander para poder visualizar de manera grafica lo que se guarda en redis.
