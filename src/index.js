@@ -4,9 +4,12 @@ import responseTime from 'response-time';
 import redis from 'redis';
 import { promisify } from 'util';
 
-const client = redis.createClient({
-  url: 'redis://red-cgd1b9m4dad6fr089rgg:6379'
-})
+/*const client = redis.createClient({
+  host: '127.0.0.1',
+  port: 6379,
+})*/
+
+const client = redis.createClient('redis://red-cgd1b9m4dad6fr089rgg:6379');
 
 const GET_ASYNC = promisify(client.get).bind(client);  // Lo que hace es convertir el método get de Redis en una promesa para poder usar async/await
 const SET_ASYNC = promisify(client.set).bind(client);  // Lo que hace es convertir el método get de Redis en una promesa para poder usar async/await
